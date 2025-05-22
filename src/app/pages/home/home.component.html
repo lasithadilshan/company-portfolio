@@ -1,0 +1,122 @@
+<!-- Hero Section -->
+<div class="bg-image d-flex justify-content-center align-items-center text-center hero">
+  <div class="hero-inner">
+    <h1 class="display-4 text-white">Welcome to DevDroid</h1>
+    <p class="lead text-white">We provide top-notch IT services to help your ideas thrive.</p>
+    <a class="btn dd-btn  dd-btn-primary btn-lg services-btn" routerLink="/services" role="button">Our Services</a>
+  </div>
+</div>
+
+<!-- Services Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Services</h2>
+      <a routerLink="/services" class="btn btn-outline-primary">See More</a>
+      <p class="text-muted">Discover the range of services we offer to help your business grow.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" *ngFor="let service of services">
+        <div class="card h-100 text-center border-0 shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <i [class]="service.icon + ' fs-1 text-primary'"></i>
+            </div>
+            <h5 class="card-title">{{ service.title }}</h5>
+            <p class="card-text text-muted">{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about us -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="../../../assets/images/dd-about.png" alt="About Us" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <h2>About DevDroid</h2>
+         <a routerLink="/about" class="btn btn-outline-primary">See More</a>
+        <p>We are a leading IT solutions provider, committed to delivering innovative and efficient services to our clients.</p>
+        <a class="btn dd-btn dd-btn-primary" routerLink="/about">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- projects -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our Projects</h2>
+       <a routerLink="/projects" class="btn btn-outline-primary">See More</a>
+      <p class="text-muted">Take a look at some of our recent work.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let project of projects">
+        <div class="card h-100">
+          <img [src]="project.image" class="card-img-top proj-img" [alt]="project.title">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- client's feedback -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">What Our Clients Say</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let testimonial of testimonials">
+        <div class="card h-100">
+          <div class="card-body">
+            <p class="card-text">"{{ testimonial.feedback }}"</p>
+            <h5 class="card-title">- {{ testimonial.client }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact us -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Get in Touch</h2>
+      <p class="text-muted">We'd love to hear from you.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn dd-btn dd-btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h5>Contact Information</h5>
+        <p><strong>Address:</strong> 123 Main Street, Colombo, Sri Lanka</p>
+        <p><strong>Phone:</strong> +94 123 456 789</p>
+        <p><strong>Email:</strong> info@devdroid.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+

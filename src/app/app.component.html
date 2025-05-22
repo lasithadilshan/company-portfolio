@@ -1,0 +1,60 @@
+ <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 pl-4">
+  <a class="navbar-brand" routerLink="/"><img src="../assets/images/DevDroid App Logo.png" class="logo-img"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link p-0 mx-3" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-0 mx-3" routerLink="/about" routerLinkActive="active-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-0 mx-3" routerLink="/services" routerLinkActive="active-link">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-0 mx-3" routerLink="/projects" routerLinkActive="active-link">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-0 mx-3" routerLink="/contact" routerLinkActive="active-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h5>DevDroid</h5>
+        <p class="mb-0">Innovating your digital world.</p>
+      </div>
+      <!-- Navigation Links -->
+      <div class="col-md-3 mb-3 mb-md-0">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a routerLink="/" class="text-white text-decoration-none">Home</a></li>
+          <li><a routerLink="/about" class="text-white text-decoration-none">About</a></li>
+          <li><a routerLink="/services" class="text-white text-decoration-none">Services</a></li>
+          <li><a routerLink="/contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Social Media Icons -->
+      <div class="col-md-3">
+        <h6>Follow Us</h6>
+        <a href="#" class="text-white mr-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white mr-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+    <hr class="border-top border-light mt-4">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 DevDroid. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

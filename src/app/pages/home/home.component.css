@@ -1,0 +1,19 @@
+.hero{
+   background-image: url('../../../assets/images/dd-bg-3.png'); 
+   height: 700px;
+    background-size: cover;
+    background-position: bottom;
+    align-items: flex-start !important;
+}
+ .hero-inner{
+    padding: 140px;
+ }
+ @media screen and (max-width:768px){
+        .hero-inner{
+        padding: 50px;
+    }
+ }
+.proj-img {
+    height: 125px;
+    object-fit: cover;
+}

@@ -1,0 +1,11 @@
+.logo-img{
+    width: 100px;
+    height: 30px;
+}
+.navbar .nav-link.active-link {
+  border-bottom: 3px solid #007bff; /* Bootstrap primary color */
+  color: #007bff;
+}
+.navbar .nav-link:hover {
+  color: #0056b3; /* Darker shade for hover effect */
+}

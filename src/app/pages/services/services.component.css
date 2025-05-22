@@ -1,0 +1,11 @@
+.hero-about{
+   background-image: url('../../../assets/images/inner-bg.png'); 
+   height: 220px;
+    background-size: cover;
+    background-position: center;
+    align-items: center !important;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
